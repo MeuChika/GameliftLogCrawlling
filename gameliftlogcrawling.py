@@ -102,7 +102,7 @@ window.geometry("640x400")
 window.resizable(False, False)
 
 text=tkinter.Text(window, width=100, height=10, fg="black", relief="solid", yscrollcommand='Any')
-text.insert(tkinter.CURRENT, "게임리프트 서버의 Log를 몽땅 가져온다!\n")
+text.insert(tkinter.CURRENT, "게임리프트 서버의 Log를 몽땅 가져온다!\n*주의 : AWS CLI 설치와 해당 Gamelift 조작권한을 가진 계정으로 로그인이 선행되어야 합니다.")
 text.pack(side="top", fill="both", expand=True)
 
 frame=tkinter.Frame(width=100, height=1, relief="solid", bd=1)
