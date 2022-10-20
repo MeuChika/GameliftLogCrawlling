@@ -21,7 +21,7 @@ def main():
             {
                 'FromPort': 22,
                 'ToPort': 22,
-                'IpRange': '61.37.80.131/32',
+                'IpRange': myid,
                 'Protocol': 'TCP'
             }
         ]
