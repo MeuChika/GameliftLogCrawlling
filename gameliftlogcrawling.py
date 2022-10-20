@@ -91,9 +91,13 @@ def main():
     file.write(publickey)
     file.close()
 
-    operation = "scp -r -i ./SecretKey.pem "+ username +"@"+ipaddress+":/local/game/K2/Saved .\\ \nyes"
-    os.system(operation)
-
+    operation = "scp -r -i ./SecretKey.pem "+ username +"@"+ipaddress+":/local/game/K2/Saved .\\ \nyes\n"
+    text.insert("current" , os.system(operation))
+    #subprocess.call(operation)
+    #if os.popen(operation):
+    #    text.insert("current" , "Success \n\n")
+    #else :
+    #    text.insert("current" , "Error : ProcessFailed \n\n")
 
 # GUI
 window = tkinter.Tk()
